@@ -20,11 +20,7 @@ The Data folder contains any version of the data we change. heart_data_cleaned.c
 
 There is a large variety of ML models available to use through scikit-learn's API. All have their strengths and weaknesses, and most will only work with certain kinds of data. Your data set, the nature of your data and the variable you're trying to predict, matters greatly for which ML model or models you should try and use. Thus, we feel it is appropriate to give a short justification for which models we will attempt to use for our data set and for our present goals.
 
-In selecting appropriate ML models we consider the following hierarchy.
-
-![ml_hierarchy](ml_hierarchy.png)
-
-Firstly, our problem is a supervised learning problem. We already know what we're trying to predict (heart disease yes or no) and have the appropriate labels for this target variable. Therefore, we choose from the ML models in the supervised learning category. Secondly, our problem is a problem of classification, since the variable we're trying to predict, the presence of heart disease, is a categorical variable (yes or no). We are not trying to predict something continuous like height or weight, which can be anything from a continuous range of numbers. Therefore, we select classification models from the supervised learning tree. 
+Firstly, our problem is a supervised learning problem. We already know what we're trying to predict (heart disease yes or no) and have the appropriate labels for this target variable. Therefore, our problem is a supervised learning problem. Secondly, our problem is a problem of classification, since the variable we're trying to predict, the presence of heart disease, is a categorical variable (yes or no). We are not trying to predict something continuous like height or weight, which can be anything from a continuous range of numbers. Therefore, we select classification models. 
 
 In the preprocessing stage of our capstone we OneHot encoded all our non-numeric variables specifically to prepare for using a Logistic Regression ML model, which is a derivative of the Linear Regression ML family adapted specifically for predicting categorical outcomes. We will also use a random forest of decision tree models, which is an ensemble method for classification. We feel decision trees are a good point of comparison to other ML models because they're simpler to explain. Both of these models are classification models, and so are suitable for our purposes.
 
